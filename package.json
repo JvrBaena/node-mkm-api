@@ -2,7 +2,7 @@
   "name": "node-mkm-api",
   "version": "0.0.0",
   "description": "Node.js wrapper for MagicCardMarket API",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,7 @@
   "readmeFilename": "README.md",
   "gitHead": "13fb55a99aa5ea8de05bddb3bfd500b8100e0b08",
   "dependencies": {
-    "xml2js": "~0.4.1",
-    "request": "~2.33.0"
+    "request": "~2.33.0",
+    "xml2js": "^0.4.17"
   }
 }
