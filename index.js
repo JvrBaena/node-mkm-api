@@ -12,6 +12,8 @@ var createAccountRoutes = require('./lib/resources/account');
 var createMarketplaceRoutes = require('./lib/resources/marketplace');
 var createOrdersRoutes = require('./lib/resources/orders');
 var createCartRoutes = require('./lib/resources/cart');
+var createStockRoutes = require('./lib/resources/stock');
+var createWantsListRoutes = require('./lib/resources/wants');
 
 
 module.exports = function(options) {
@@ -26,6 +28,8 @@ module.exports = function(options) {
   that.marketplace = createMarketplaceRoutes(oauth, requestHandler);
   that.orders = createOrdersRoutes(oauth, requestHandler);
   that.cart = createCartRoutes(oauth, requestHandler);
+  that.stock = createStockRoutes(oauth, requestHandler);
+  that.wants = createWantsListRoutes(oauth, requestHandler);
 
   return that;
 };
